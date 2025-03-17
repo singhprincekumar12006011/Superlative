@@ -1,0 +1,178 @@
+/* Base Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .pr-body {
+    background: linear-gradient(135deg, #098679, #010b16);
+    margin-left: 253px;
+    padding-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+ 
+  
+  .pr-form {
+    background: #0b2b27;
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; /* Adjusted for a larger form layout */
+  }
+  
+  /* Form Row Styling */
+  .pr-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between fields */
+    margin-bottom: 15px;
+  }
+  
+  .pr-form .form-row div {
+    flex: 1; /* Ensures equal width for all fields in the row */
+  }
+  
+  .pr-form .form-row div:not(:last-child) {
+    margin-right: 20px; /* Adds spacing between fields in the same row */
+  }
+  
+  /* Input and Select Styling */
+  .pr-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .pr-form input,
+  .pr-form select {
+    width: 100%; /* Ensures inputs and selects take full width of their container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    outline: none; /* Removes default focus outline */
+    box-sizing: border-box;
+  }
+  
+  .pr-form select {
+    appearance: none; /* Removes default dropdown styling for consistent design */
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='black'><path d='M6 8l4 4 4-4H6z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1rem;
+  }
+  
+  .pr-form input[type="file"] {
+    padding: 5px;
+  }
+  
+  /* Button Styling */
+  .pr-form button {
+    padding: 10px;
+    background: #17a2b8;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pr-form button:hover {
+    background: #138496;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pr-body {
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .pr-form {
+      padding: 15px;
+    }
+  
+    .pr-heading {
+      font-size: 1.5rem;
+    }
+  
+    .pr-form .form-row {
+      flex-wrap: wrap; /* Allows wrapping of fields */
+    }
+  
+    .pr-form .form-row div {
+      flex: 0 0 48%; /* Two fields per row for medium screens */
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pr-form {
+      padding: 10px;
+    }
+  
+    .pr-heading {
+      font-size: 1.2rem;
+    }
+  
+    .pr-form .form-row {
+      flex-direction: column; /* Stacks fields vertically on smaller screens */
+      gap: 10px;
+    }
+  
+    .pr-form .form-row div {
+      flex: 1;
+      margin-right: 0;
+    }
+  
+    .pr-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+ 
+
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.records-table th, .records-table td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+/* Horizontal and vertical scrollbars */
+.table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,438 @@
+/* LandingPage.css */
+
+/* General Styles */
+.lp-container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #082d36, #010b16);
+    margin-left: 253px;
+  
+  }
+
+    .lp-header {
+      text-align: center;
+      margin: 20px 0 100px;
+      position: relative; /* For animation positioning */
+    }
+    
+    /* Title Animation */
+    .fade-in-title {
+      font-size: 3.5em;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add depth to text */
+      opacity: 0; /* Start hidden */
+      transform: translateY(20px); /* Start slightly lower */
+      animation: fadeInUp 2s ease-out forwards; /* Fade-in with upward movement */
+    }
+    
+    /* Subtitle Animation */
+    .fade-in-subtitle {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      opacity: 0;
+      margin-top: 10px;
+      transform: translateY(20px);
+      animation: fadeInUp 2.5s ease-out forwards; /* Subtitle with delay */
+      animation-delay: 0.5s; /* Delayed start for subtitle */
+    }
+    
+    /* Buttons Section */
+    .lp-actions {
+      margin-top: 30px;
+    }
+    
+    .lp-button {
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .primary-btn {
+      background-color: #4caf50;
+      color: white;
+    }
+    
+    .primary-btn:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+    
+    .secondary-btn {
+      background-color: #f1c40f;
+      color: black;
+      margin-left: 15px;
+    }
+    
+    .secondary-btn:hover {
+      background-color: #d4ac0d;
+      transform: scale(1.05);
+    }
+    
+    /* Feature Cards */
+    .lp-card {
+      background: rgba(255, 255, 255, 0.1); /* Transparent background */
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+      transition: transform 0.3s ease;
+    }
+    
+    .lp-card:hover {
+      transform: translateY(-5px); /* Slight lift on hover */
+    }
+    
+    .lp-card h2 {
+      font-size: 1.5em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .lp-card p {
+      font-size: 1em;
+      color: #dcdcdc;
+    }
+    
+    /* Footer Section */
+    .lp-footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #b0b0b0;
+      background: rgba(0, 0, 0, 0.3); /* Slightly transparent footer */
+      text-align: center;
+    }
+    
+    /* Keyframes for Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  /* end of style for heading */
+  
+  .lp-header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #cbd4c9;
+    margin-bottom: 10px;
+  }
+  
+  .lp-header p {
+    font-size: 1.2em;
+    color: #d9bae1;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .lp-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .lp-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .lp-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #00796b;
+  }
+  
+  .lp-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .lp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lp-actions {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .lp-button {
+    background-color: #00796b;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .lp-button.primary-btn {
+    background-color: #0d6efd;
+  }
+  
+  .lp-button.secondary-btn {
+    background-color: #0288d1;
+  }
+  
+  .lp-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+  }
+  
+  .lp-button:focus {
+    outline: none;
+  }
+  
+  .lp-features {
+    margin-top: 80px;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .lp-features .section-title {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 40px;
+  }
+  
+  .feature-card {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #00796b;
+  }
+  
+  .feature-card p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .lp-testimonials {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 60px;
+    border-radius: 8px;
+  }
+  
+  .lp-testimonials .section-title {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  
+  .testimonial-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #00796b;
+  }
+  
+  .testimonial-card span {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  .lp-footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 8px;
+  }
+  
+  .lp-footer p {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lp-header h1 {
+      font-size: 2.5em;
+    }
+  
+    .lp-header p {
+      font-size: 1.1em;
+    }
+  
+    .lp-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lp-card {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 30px;
+    }
+  
+    .lp-actions {
+      flex-direction: column;
+    }
+  
+    .lp-button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .lp-features {
+      padding: 40px 20px;
+    }
+  
+    .feature-card {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 20px;
+    }
+  
+    .testimonial-card {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Hover animations */
+  @keyframes hoverEffect {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  @media screen and (max-width: 1182px) {
+      .lp-content {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+      }
+    
+      .lp-card {
+        width: 80%; /* Make cards wider to fill more space */
+      }
+    
+      .lp-actions {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduce gap between buttons */
+      }
+  }
+
+
+
+
+  .line-container {
+    position: relative;
+    height: 4px; /* Height of the blue line */
+    width: 400px; /* Width of the line */
+    margin: 0 auto;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  .blue-line {
+    height: 100%;
+    background-color: #120943; /* Blue color */
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+  }
+  
+  .white-line {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 5px; /* Width of the white line */
+    position: absolute;
+    border: none ;
+    animation: moveLine 5s linear infinite; /* Smoother back-and-forth motion */
+  }
+  
+  /* Keyframes for back-and-forth motion */
+  @keyframes moveLine {
+    0% {
+      transform: translateX(-5px); /* Start just outside the left edge */
+    }
+    50% {
+      transform: translateX(400px); /* Move to the right edge */
+    }
+    100% {
+      transform: translateX(-5px); /* Return to the left edge */
+    }
+  }
+  
+
+
+ 

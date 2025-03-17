@@ -1,0 +1,69 @@
+.sb-body {
+    width: 210px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#050132), to(#dee2e5)); /* For older browsers */
+    background: linear-gradient(to bottom, #050132, #4599cd); /* Standard CSS gradient */
+    
+    padding-top: 20px;
+    padding-left: 40px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5; /* Ensure it is above content */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 10.5);
+}
+
+.sb-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.sb-menu li {
+    margin-bottom: 25px;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Make the text size consistent */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    width: 90%;   
+    height: 40px;
+    padding-left: 10%;
+    border-bottom-left-radius: 20px;
+    box-shadow: #e3e3e9;
+  
+    margin-right: 40px;
+  
+    /* Add a lightweight bottom border */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.142); /* Light white border with transparency */
+}
+
+.a:hover {
+    color: rgb(158, 8, 81);
+}
+
+
+.b li {
+    margin-bottom: 15px;
+}
+
+.bd-landing {
+    margin-left: 250px; /* Match the sidebar width */
+    width: calc(100% - 250px); /* Take remaining screen width */
+    height: 100vh; /* Full height */
+    background-color: black; /* Background color */
+    color: white; /* Text color to contrast with black */
+}
+
+@media (max-width: 500px){
+    .sidebar{
+      display: none;
+    }
+  }
